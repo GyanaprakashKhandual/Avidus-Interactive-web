@@ -6,6 +6,9 @@ const path = require('path');
 // Import ASME data
 const asmeData = require('./ASME/API.json');
 
+//Import Mega jewelers data
+const mjData = require('./MJ/API.json');
+
 dotenv.config();
 
 const app = express();
@@ -22,6 +25,10 @@ app.use(cors({
 app.get('/api/asme', (req, res) => {
   res.json(asmeData);
 });
+
+app.get('/api/mj-api', (req, res) => {
+  res.json(mjData);
+})
 
 // ✅ Start server
 const PORT = process.env.PORT || 5000;

@@ -204,5 +204,97 @@
         "Requirement": "Add authentication token to protect the routes"
       }
     ]
+  },
+  {
+    "apiName": "Get User",
+    "requestUrl": "https://pxxxinvsvu.us-east-1.awsapprunner.com/v1/vendors/users",
+    "requestMethod": "GET",
+    "statusCode": "200 OK",
+    "Total Test Case": "5",
+    "Passed Test Case": "3",
+    "Failed Test Case": "2",
+    "bugs": [
+      {
+        "Test Description": "Call API with an invalid token",
+        "Expected Result": "Status code 401 Unauthorized",
+        "Actual Result": "Status code 200 passed",
+        "Requirement": "Add authentication token to protect the routes"
+      },
+      {
+        "Test Description": "Call API without token",
+        "Expected Result": "Status code 401 Unauthorized",
+        "Actual Result": "Status code 200 passed",
+        "Requirement": "Add authentication token to protect the routes"
+      }
+    ]
+  },
+    {
+    "apiName": "Sales Allocation Pagination",
+    "requestUrl": "https://pxxxinvsvu.us-east-1.awsapprunner.com/v1/sales-person-allocations?page=1&limit=10",
+    "requestMethod": "GET",
+    "statusCode": "200 OK",
+    "Total Test Case": "6",
+    "Passed Test Case": "4",
+    "Failed Test Case": "2",
+    "bugs": [
+      {
+        "Test Description": "Call API with an invalid token",
+        "Expected Result": "Status code 401 Unauthorized",
+        "Actual Result": "Status code 200 passed",
+        "Requirement": "Add authentication token to protect the routes"
+      },
+      {
+        "Test Description": "Call API without token",
+        "Expected Result": "Status code 401 Unauthorized",
+        "Actual Result": "Status code 200 passed",
+        "Requirement": "Add authentication token to protect the routes"
+      }
+    ]
+  },
+      {
+    "apiName": "Get customer-maintenance",
+    "requestUrl": "https://pxxxinvsvu.us-east-1.awsapprunner.com/v1/customer-maintenance",
+    "requestMethod": "GET",
+    "statusCode": "200 OK",
+    "Total Test Case": "5",
+    "Passed Test Case": "3",
+    "Failed Test Case": "2",
+    "bugs": [
+      {
+        "Test Description": "Call API with an invalid token",
+        "Expected Result": "Status code 401 Unauthorized",
+        "Actual Result": "Status code 200 passed",
+        "Requirement": "Add authentication token to protect the routes"
+      },
+      {
+        "Test Description": "Call API without token",
+        "Expected Result": "Status code 401 Unauthorized",
+        "Actual Result": "Status code 200 passed",
+        "Requirement": "Add authentication token to protect the routes"
+      }
+    ]
+  },
+        {
+    "apiName": "User Pagination",
+    "requestUrl": "https://pxxxinvsvu.us-east-1.awsapprunner.com/v1/users?page=1&limit=10",
+    "requestMethod": "GET",
+    "statusCode": "200 OK",
+    "Total Test Case": "7",
+    "Passed Test Case": "5",
+    "Failed Test Case": "2",
+    "bugs": [
+      {
+        "Test Description": "Call API with an invalid token",
+        "Expected Result": "Status code 401 Unauthorized",
+        "Actual Result": "Status code 200 passed",
+        "Requirement": "Add authentication token to protect the routes"
+      },
+      {
+        "Test Description": "Call API without token",
+        "Expected Result": "Status code 401 Unauthorized",
+        "Actual Result": "Status code 200 passed",
+        "Requirement": "Add authentication token to protect the routes"
+      }
+    ]
   }
 ]

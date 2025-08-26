@@ -94,7 +94,7 @@
     "bugs": []
   },
    {
-    "apiName": "Products - Edit",
+    "apiName": "Add Codes",
     "requestUrl": "https://pxxxinvsvu.us-east-1.awsapprunner.com/v1/product-codes/bulk",
     "requestMethod": "POST",
     "statusCode": "201 Created",
@@ -102,5 +102,107 @@
     "Passed Test Case": "6",
     "Failed Test Case": "0",
     "bugs": []
+  },
+  {
+    "apiName": "Add Tray",
+    "requestUrl": "https://pxxxinvsvu.us-east-1.awsapprunner.com/v1/tray",
+    "requestMethod": "POST",
+    "statusCode": "201 Created",
+    "Total Test Case": "5",
+    "Passed Test Case": "4",
+    "Failed Test Case": "1",
+    "bugs": [
+      {
+        "Test Description": "Call API with an invalid token",
+        "Expected Result": "Status code 401 Unauthorized",
+        "Actual Result": "Status code 200 passed",
+        "Requirement": "Add authentication token to protect the routes"
+      }
+    ]
+  },
+  {
+    "apiName": "Get Role",
+    "requestUrl": "https://pxxxinvsvu.us-east-1.awsapprunner.com/v1/role",
+    "requestMethod": "GET",
+    "statusCode": "200 OK",
+    "Total Test Case": "3",
+    "Passed Test Case": "2",
+    "Failed Test Case": "1",
+    "bugs": [
+      {
+        "Test Description": "Call API with an invalid token",
+        "Expected Result": "Status code 401 Unauthorized",
+        "Actual Result": "Status code 200 passed",
+        "Requirement": "Add authentication token to protect the routes"
+      }
+    ]
+  },
+  {
+    "apiName": "Get Product Categories",
+    "requestUrl": "https://pxxxinvsvu.us-east-1.awsapprunner.com/v1/product-categories",
+    "requestMethod": "GET",
+    "statusCode": "200 OK",
+    "Total Test Case": "3",
+    "Passed Test Case": "2",
+    "Failed Test Case": "1",
+    "bugs": [
+      {
+        "Test Description": "Call API with an invalid token",
+        "Expected Result": "Status code 401 Unauthorized",
+        "Actual Result": "Status code 200 passed",
+        "Requirement": "Add authentication token to protect the routes"
+      }
+    ]
+  },
+  {
+    "apiName": "Get Tray",
+    "requestUrl": "https://pxxxinvsvu.us-east-1.awsapprunner.com/v1/tray",
+    "requestMethod": "GET",
+    "statusCode": "200 OK",
+    "Total Test Case": "3",
+    "Passed Test Case": "2",
+    "Failed Test Case": "1",
+    "bugs": [
+      {
+        "Test Description": "Call API with an invalid token",
+        "Expected Result": "Status code 401 Unauthorized",
+        "Actual Result": "Status code 200 passed",
+        "Requirement": "Add authentication token to protect the routes"
+      }
+    ]
+  },
+  {
+    "apiName": "Get Items",
+    "requestUrl": "https://pxxxinvsvu.us-east-1.awsapprunner.com/v1/items",
+    "requestMethod": "GET",
+    "statusCode": "200 OK",
+    "Total Test Case": "3",
+    "Passed Test Case": "2",
+    "Failed Test Case": "1",
+    "bugs": [
+      {
+        "Test Description": "Call API with an invalid token",
+        "Expected Result": "Status code 401 Unauthorized",
+        "Actual Result": "Status code 200 passed",
+        "Requirement": "Add authentication token to protect the routes"
+      }
+    ]
+  },
+  {
+    "apiName": "Get Items",
+    "requestUrl": "https://pxxxinvsvu.us-east-1.awsapprunner.com/v1/vendors",
+    "requestMethod": "GET",
+    "statusCode": "200 OK",
+    "Total Test Case": "3",
+    "Passed Test Case": "2",
+    "Failed Test Case": "1",
+    "bugs": [
+      {
+        "Test Description": "Call API with an invalid token",
+        "Expected Result": "Status code 401 Unauthorized",
+        "Actual Result": "Status code 200 passed",
+        "Requirement": "Add authentication token to protect the routes"
+      }
+    ]
   }
 ]

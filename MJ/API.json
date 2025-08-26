@@ -62,5 +62,45 @@
         "Requirement": "Add Proper handling for this type of case"
       }
     ]
+  },
+  {
+    "apiName": "Products",
+    "requestUrl": "https://pxxxinvsvu.us-east-1.awsapprunner.com/v1/products",
+    "requestMethod": "POST",
+    "statusCode": "201 Created",
+    "Total Test Case": "6",
+    "Passed Test Case": "6",
+    "Failed Test Case": "0",
+    "bugs": []
+  },
+  {
+    "apiName": "Products - Edit",
+    "requestUrl": "https://pxxxinvsvu.us-east-1.awsapprunner.com/v1/products/689988b7246e60d40c3eb278",
+    "requestMethod": "PATCH",
+    "statusCode": "200 OK",
+    "Total Test Case": "6",
+    "Passed Test Case": "5",
+    "Failed Test Case": "0",
+    "bugs": []
+  },
+  {
+    "apiName": "Products - Edit",
+    "requestUrl": "https://pxxxinvsvu.us-east-1.awsapprunner.com/v1/products/689988b7246e60d40c3eb278",
+    "requestMethod": "DELETE",
+    "statusCode": "204 No Content",
+    "Total Test Case": "6",
+    "Passed Test Case": "6",
+    "Failed Test Case": "0",
+    "bugs": []
+  },
+   {
+    "apiName": "Products - Edit",
+    "requestUrl": "https://pxxxinvsvu.us-east-1.awsapprunner.com/v1/product-codes/bulk",
+    "requestMethod": "POST",
+    "statusCode": "201 Created",
+    "Total Test Case": "6",
+    "Passed Test Case": "6",
+    "Failed Test Case": "0",
+    "bugs": []
   }
 ]

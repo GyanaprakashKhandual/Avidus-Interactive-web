@@ -9,6 +9,8 @@ const asmeData = require('./ASME/API.json');
 //Import Mega jewelers data
 const mjData = require('./MJ/API.json');
 
+const resolutionProData = require('./Resolution-Pro/API.json');
+
 dotenv.config();
 
 const app = express();
@@ -28,6 +30,10 @@ app.get('/api/asme', (req, res) => {
 
 app.get('/api/mj-api', (req, res) => {
   res.json(mjData);
+});
+
+app.get('/api/resolution-pro', (req, res) => {
+  res.json(resolutionProData);
 })
 
 // ✅ Start server

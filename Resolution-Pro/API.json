@@ -1,0 +1,89 @@
+[
+    {
+        "apiName": "Role API",
+        "requestType": "GET",
+        "apiURL": "https://cdfwasmk2m.us-east-1.awsapprunner.com/v1/role",
+        "totalTests": 5,
+        "passedTests": "4",
+        "failedTests": "1",
+        "bugs": [
+            {
+                "bugDesc": "Verifies API returns empty or valid data structure when no roles exist",
+                "expected": "Handles gracefully with empty results or valid JSON",
+                "actual": "Breaks with null pointer or malformed response"
+            }
+        ]
+    },
+        {
+        "apiName": "User API",
+        "requestType": "GET",
+        "apiURL": "https://cdfwasmk2m.us-east-1.awsapprunner.com/v1/user",
+        "totalTests": 5,
+        "passedTests": "4",
+        "failedTests": "1",
+        "bugs": [
+            {
+                "bugDesc": "Verifies API returns empty or valid data structure when no roles exist",
+                "expected": "Handles gracefully with empty results or valid JSON",
+                "actual": "Breaks with null pointer or malformed response"
+            }
+        ]
+    },
+    {
+        "apiName": "Customer Maintenance API",
+        "requestType": "GET",
+        "apiURL": "https://cdfwasmk2m.us-east-1.awsapprunner.com/v1/customer-maintenance",
+        "totalTests": 5,
+        "passedTests": "4",
+        "failedTests": "1",
+        "bugs": [
+            {
+                "bugDesc": "Verifies API returns data within acceptable response time under load",
+                "expected": "This API should fetch the data within 10 seconds",
+                "actual": "It fetches the data but takes more than 10 seconds"
+            }
+        ]
+    },
+    {
+        "apiName": "Customer Maintenance API",
+        "requestType": "GET",
+        "apiURL": "https://cdfwasmk2m.us-east-1.awsapprunner.com/v1/circular-resolution",
+        "totalTests": 5,
+        "passedTests": "4",
+        "failedTests": "1",
+        "bugs": [
+            {
+                "bugDesc": "Verifies API returns data within acceptable response time under load",
+                "expected": "This API should fetch the data within 10 seconds",
+                "actual": "It fetches the data but takes more than 10 seconds"
+            }
+        ]
+    },
+    {
+        "apiName": "Customer Maintenance API",
+        "requestType": "GET",
+        "apiURL": "https://cdfwasmk2m.us-east-1.awsapprunner.com/v1/agenda-tracker",
+        "totalTests": 4,
+        "passedTests": "4",
+        "failedTests": "0",
+        "bugs": []
+    },
+    {
+        "apiName": "Customer Maintenance API",
+        "requestType": "GET",
+        "apiURL": "https://cdfwasmk2m.us-east-1.awsapprunner.com/v1/compliance-tracker",
+        "totalTests": 3,
+        "passedTests": "3",
+        "failedTests": "0",
+        "bugs": []
+    },
+    {
+        "apiName": "Customer Maintenance API",
+        "requestType": "GET",
+        "apiURL": "https://cdfwasmk2m.us-east-1.awsapprunner.com/v1/shareholder-meeting",
+        "totalTests": 3,
+        "passedTests": "3",
+        "failedTests": "0",
+        "bugs": []
+    }
+]

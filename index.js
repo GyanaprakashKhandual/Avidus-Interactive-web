@@ -10,6 +10,7 @@ const asmeData = require('./ASME/API.json');
 const mjData = require('./MJ/API.json');
 
 const resolutionProData = require('./Resolution-Pro/API.json');
+const resolutionProPerformanceTestData = require('./Resolution-Pro/performace.json');
 
 dotenv.config();
 
@@ -34,7 +35,11 @@ app.get('/api/mj-api', (req, res) => {
 
 app.get('/api/resolution-pro', (req, res) => {
   res.json(resolutionProData);
-})
+});
+
+app.get('/api/resolution-pro-performance', (req, res) => {
+  res.json(resolutionProPerformanceTestData); 
+});
 
 // ✅ Start server
 const PORT = process.env.PORT || 5000;
